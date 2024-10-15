@@ -34,19 +34,19 @@ To run a CUDA application, your system needs:
 + Qt Version: 5.15.8
 - Kernel Version: 5.14.21-150500.55.83-default (64-bit)
 
-#### Hardware=
-Graphics Platform: X11
-Processors: 8 × Intel® Core™ i7-4790 CPU @ 3.60GHz
-Memory: 15.3 GiB of RAM
-Graphics Processor: Mesa Intel® HD Graphics 4600
-Manufacturer: Hewlett-Packard
-Product Name: HP Z230 Tower Workstation
+#### Hardware
+- Graphics Platform: X11
+- Processors: 8 × Intel® Core™ i7-4790 CPU @ 3.60GHz
+- Memory: 15.3 GiB of RAM
+- Graphics Processor: Mesa Intel® HD Graphics 4600
+- Manufacturer: Hewlett-Packard
+- Product Name: HP Z230 Tower Workstation
 
-## Installing CUDA Toolkit 12.4
-Download Installer for your OS (e.g. Linux x86_64 SLES 15)
-The base installer is available for download at https://developer.nvidia.com/cuda-12-4-0-download-archive
+## Installing CUDA Toolkit 12.4 on Linux x86_64 SLES 15
+Download Installer for your OS (e.g. )
+Your base installer is available for download and the installation instructions are also found [here](https://developer.nvidia.com/cuda-12-4-0-download-archive).
 
-### Base Installer	
+### Base Installer for Linux x86_64 SLES 15	
 Installation Instructions:
 ```
 wget https://developer.download.nvidia.com/compute/cuda/12.4.0/local_installers/cuda-repo-sles15-12-4-local-12.4.0_550.54.14-1.x86_64.rpm
@@ -57,18 +57,26 @@ sudo zypper install -y cuda-toolkit-12-4
 
 Additional installation options are detailed [here](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#switching-between-driver-module-flavors)
 
-Driver Installer	
+### Driver Installer for Linux x86_64 SLES 15		
 NVIDIA Driver Instructions (choose one option)
+
 To install the legacy kernel module flavor:
+```
 sudo zypper install -y cuda-drivers
+```
+
 To install the open kernel module flavor:
+```
 sudo zypper install -y nvidia-open-driver-G06-kmp-default
 sudo zypper install -y cuda-drivers
-To switch between NVIDIA Driver kernel module flavors see here.
+```
 
-The CUDA Toolkit contains Open-Source Software. The source code can be found here.
-The checksums for the installer and patches can be found in Installer Checksums.
-For further information, see the Installation Guide for Linux and the CUDA Quick Start Guide.
+To switch between NVIDIA Driver kernel module flavors see [here](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#switching-between-driver-module-flavors).
+
+### Final notes on the toolkit
+- The CUDA Toolkit contains Open-Source Software. The source code can be found [here](https://developer.download.nvidia.com/compute/cuda/opensource/12.4.0).
+- The checksums for the installer and patches can be found in [Installer Checksums](https://developer.download.nvidia.com/compute/cuda/12.4.0/docs/sidebar/md5sum.txt).
+- For further information, see the [Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) and the [CUDA Quick Start Guide](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html).
 
 ```
 
