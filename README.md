@@ -3,9 +3,8 @@
 ### Stack
 ```Full stack
 jupyter
-python 3.12
-pyTorch 1.5
-torch 
+Python 3.12
+PyTorch 2.4
 CUDA 12.4 and CUDA Toolkit 12.4
 Linux x86-64 openSUSE Leap 15
 ```
@@ -25,7 +24,7 @@ See [NVIDIA CUDA technical doc](https://docs.nvidia.com/cuda/doc/index.html).
 
 ### GPUs for CUDA 12.4
 CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. For more info, 
-- see CUDA-capable GPUs at [developer.nvidia.com/cuda-gpus]
+- see CUDA-capable GPUs [list](developer.nvidia.com/cuda-gpus)
 - check release notes for the CUDA Toolkit for a list of supported products
 - generally, CUDA 12.4 is backward-compatible
 
@@ -41,6 +40,7 @@ NVIDIA overview [here](https://developer.nvidia.com/blog/cuda-toolkit-12-4-enhan
 ### Test system
 
 #### Operating System: openSUSE Leap 15.5
+
 #### Software
 - KDE Plasma Version: 5.27.9
 - KDE Frameworks Version: 5.103.0
