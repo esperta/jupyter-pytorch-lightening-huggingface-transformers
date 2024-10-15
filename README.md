@@ -25,7 +25,7 @@ CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce,
 The CUDA Toolkit contains
 - CUDA drivers for Linux and Windows
 - CUDA C++ Core Libraries
-- [NSight Compute](https://developer.nvidia.com/nsight-compute/get-started) profiling and analysis for CUDA kernels
+- [NSight Compute](https://developer.nvidia.com/tools-overview/nsight-compute/get-started) profiling and analysis for CUDA kernels
 - [NSight Systems](https://developer.nvidia.com/nsight-systems/get-started) performance tuning; profiles hardware metrics and CUDA apps, APIs, and libraries 
 - support for GCC 13 as a host-side compilers
 NVIDIA overview [here](https://developer.nvidia.com/blog/cuda-toolkit-12-4-enhances-support-for-nvidia-grace-hopper-and-confidential-computing/).
