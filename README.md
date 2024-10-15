@@ -14,12 +14,21 @@ Linux x86-64 openSUSE Leap 15
 |PyTorch version | Python	Stable CUDA
 2.5	>=3.9, <=3.12, (3.13 experimental)	CUDA 11.8, CUDA 12.1, CUDA 12.4, CUDNN 9.1.0.70
 2.4	>=3.8, <=3.12	CUDA 11.8, CUDA 12.1, CUDNN 9.1.0.70
-### CUDA 12.4
+
+### GPUs for CUDA 12.4
 CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. For more info, 
 - see CUDA-capable GPUs at developer.nvidia.com/cuda-gpus
 - check release notes for the CUDA Toolkit for a list of supported products
+- generally, CUDA 12.4 is backward-compatible
 
 #### CUDA Toolkit 12.4
+The CUDA Toolkit contains
+```
+CUDA C++ Core Libraries
+support for GCC 13 as a host-side compilern
+the vFatbin library, enabling programmatic creation of fat binaries and runtime manipulation of binary objects.  This library supports multiple GPU architectures
+
+```
 To run a CUDA application, your system needs:
 - A CUDA enabled GPU
 - An NVIDIA display driver that's compatible with the CUDA Toolkit used to build the application
