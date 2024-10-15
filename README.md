@@ -15,11 +15,12 @@ Linux x86-64 openSUSE Leap 15
 |   2.5	   | >=3.9, <=3.12, (3.13 experimental) |	CUDA 11.8, CUDA 12.1, CUDA 12.4, CUDNN 9.1.0.70 |
 |   2.4	   |         >=3.8, <=3.12	            |     CUDA 11.8, CUDA 12.1, CUDNN 9.1.0.70        |
 
-### Necessary components for running CUDA applications
+## CUDA 12.4
 To run a CUDA application, your system needs:
 - A CUDA enabled GPU
 - An NVIDIA display driver that's compatible with the CUDA Toolkit used to build the application
 - The right version of any libraries the application relies on for dynamic linking
+
 See [NVIDIA CUDA technical doc](https://docs.nvidia.com/cuda/doc/index.html).
 
 ### GPUs for CUDA 12.4
