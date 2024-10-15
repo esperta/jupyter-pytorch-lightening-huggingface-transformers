@@ -17,17 +17,19 @@ Linux x86-64 openSUSE Leap 15
 
 ## CUDA 12.4
 To run a CUDA application, your system needs:
-- A CUDA enabled GPU
-- An NVIDIA display driver that's compatible with the CUDA Toolkit used to build the application
-- The right version of any libraries the application relies on for dynamic linking
+- A CUDA enabled GPU.
+- An NVIDIA display driver that's compatible with the CUDA Toolkit used to build the application.
+- The right version of any libraries the application relies on for dynamic linking.
 
 See [NVIDIA CUDA technical doc](https://docs.nvidia.com/cuda/doc/index.html).
 
-### GPUs for CUDA 12.4
-CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. For more info, 
-- see CUDA-capable GPUs [list](developer.nvidia.com/cuda-gpus)
-- check release notes for the CUDA Toolkit for a list of supported products
-- generally, CUDA 12.4 is backward-compatible
+### GPUs for CUDAs
+Every GPU 
+Each version of CUDA toolkit has a minimum compute capability that it supports. If you are using older GPU, 
+you may be unable to run the latest version of CUDA. After obtaining the compute capability of your 
+chosen NVIDIA GPU, you check against CUDA compatibility in this article.
+#### GPUs for CUDA Toolkit 12.4
+CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. 
 
 #### CUDA Toolkit 12.4
 The CUDA Toolkit contains
@@ -86,6 +88,11 @@ sudo zypper install -y cuda-drivers
 ```
 
 To switch between NVIDIA Driver kernel module flavors see [here](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#switching-between-driver-module-flavors).
+
+## Using a Tesla v100 GPU on a traditional workstation or server 
+A single server with Tesla V100 GPUs can replace hundreds of commodity CPU-only servers for both traditional HPC and AI workloads. 
+Every researcher and engineer can now afford an AI supercomputer to tackle their most challenging work.
+
 
 ### Final notes on the toolkit
 - The CUDA Toolkit contains Open-Source Software. The source code can be found [here](https://developer.download.nvidia.com/compute/cuda/opensource/12.4.0).
