@@ -1,7 +1,7 @@
 ### Refugees
 by **Brian Bilston**
 
-"""
+ ```
 They have no need of our help
 So do not tell me
 These haggard faces could belong to you or me
@@ -26,6 +26,6 @@ These are people just like us
 A place should only belong to those who are born there
 Do not be so stupid to think that
 The world can be looked at another way
-"""
+ ```
 
 (now read from bottom to top)
