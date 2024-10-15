@@ -1,6 +1,6 @@
 ## Setup for training Hugging Face Transformers
 
-### Stack
+### Current stack
 ```Full stack
 jupyter
 Python 3.12
