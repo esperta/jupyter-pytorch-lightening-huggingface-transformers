@@ -23,15 +23,12 @@ CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce,
 
 #### CUDA Toolkit 12.4
 The CUDA Toolkit contains
-```
-CUDA C++ Core Libraries
-[NSight Compute](https://developer.nvidia.com/tools-overview/nsight-compute/get-started) profiling and analysis for CUDA kernels
-[NSight Systems](https://developer.nvidia.com/tools-overview/nsight-systems/get-started) performance tuning; profiles hardware metrics and CUDA apps, APIs, and libraries 
-support for GCC 13 as a host-side compilern
-the vFatbin library, sporting
-- programmatic creation of fat binaries
-- runtime manipulation of binary objects
-- supports multiple GPU architectures
+- CUDA drivers for Linux and Windows
+- CUDA C++ Core Libraries
+- [NSight Compute](https://developer.nvidia.com/tools-overview/nsight-compute/get-started) profiling and analysis for CUDA kernels
+- [NSight Systems](https://developer.nvidia.com/tools-overview/nsight-systems/get-started) performance tuning; profiles hardware metrics and CUDA apps, APIs, and libraries 
+- support for GCC 13 as a host-side compilers
+NVIDIA overview [here](https://developer.nvidia.com/blog/cuda-toolkit-12-4-enhances-support-for-nvidia-grace-hopper-and-confidential-computing/).
 
 ```
 To run a CUDA application, your system needs:
