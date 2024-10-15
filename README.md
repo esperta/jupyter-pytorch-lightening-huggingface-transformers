@@ -25,8 +25,13 @@ CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce,
 The CUDA Toolkit contains
 ```
 CUDA C++ Core Libraries
+[NSight Compute](https://developer.nvidia.com/tools-overview/nsight-compute/get-started) profiling and analysis for CUDA kernels
+[NSight Systems](https://developer.nvidia.com/tools-overview/nsight-systems/get-started) performance tuning; profiles hardware metrics and CUDA apps, APIs, and libraries 
 support for GCC 13 as a host-side compilern
-the vFatbin library, enabling programmatic creation of fat binaries and runtime manipulation of binary objects.  This library supports multiple GPU architectures
+the vFatbin library, sporting
+- programmatic creation of fat binaries
+- runtime manipulation of binary objects
+- supports multiple GPU architectures
 
 ```
 To run a CUDA application, your system needs:
@@ -39,8 +44,8 @@ To run a CUDA application, your system needs:
 #### Operating System: openSUSE Leap 15.5
 #### Software
 - KDE Plasma Version: 5.27.9
-* KDE Frameworks Version: 5.103.0
-+ Qt Version: 5.15.8
+- KDE Frameworks Version: 5.103.0
+- Qt Version: 5.15.8
 - Kernel Version: 5.14.21-150500.55.83-default (64-bit)
 
 #### Hardware
@@ -64,7 +69,7 @@ sudo zypper refresh
 sudo zypper install -y cuda-toolkit-12-4
 ```
 
-Additional installation options are detailed [here](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#switching-between-driver-module-flavors)
+Additional installation options are detailed [here](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#meta-packages))
 
 ### Driver Installer for Linux x86_64 SLES 15		
 NVIDIA Driver Instructions (choose one option)
