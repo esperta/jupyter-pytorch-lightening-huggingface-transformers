@@ -11,32 +11,34 @@ Linux x86-64 openSUSE Leap 15
 ```
 
 ### Compatability matrix for PyTorch, Python and CUDA
-|PyTorch version | Python	Stable CUDA
-2.5	>=3.9, <=3.12, (3.13 experimental)	CUDA 11.8, CUDA 12.1, CUDA 12.4, CUDNN 9.1.0.70
-2.4	>=3.8, <=3.12	CUDA 11.8, CUDA 12.1, CUDNN 9.1.0.70
+| PyTorch  |               Python	              |                   Stable CUDA                   |
+|:--------:|:----------------------------------:|:-----------------------------------------------:|
+|   2.5	   | >=3.9, <=3.12, (3.13 experimental) |	CUDA 11.8, CUDA 12.1, CUDA 12.4, CUDNN 9.1.0.70 |
+|   2.4	   |         >=3.8, <=3.12	            |     CUDA 11.8, CUDA 12.1, CUDNN 9.1.0.70        |
+
+### Necessary components for running CUDA applications
+To run a CUDA application, your system needs:
+- A CUDA enabled GPU
+- An NVIDIA display driver that's compatible with the CUDA Toolkit used to build the application
+- The right version of any libraries the application relies on for dynamic linking
+See [NVIDIA CUDA technical doc](https://docs.nvidia.com/cuda/doc/index.html).
 
 ### GPUs for CUDA 12.4
 CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. For more info, 
-- see CUDA-capable GPUs at developer.nvidia.com/cuda-gpus
+- see CUDA-capable GPUs at [developer.nvidia.com/cuda-gpus]
 - check release notes for the CUDA Toolkit for a list of supported products
 - generally, CUDA 12.4 is backward-compatible
 
 #### CUDA Toolkit 12.4
 The CUDA Toolkit contains
-- CUDA drivers for Linux and Windows
+- NVIDIA display drivers (CUDA drivers) for Linux and Windows
 - CUDA C++ Core Libraries
 - [NSight Compute](https://developer.nvidia.com/tools-overview/nsight-compute/get-started) profiling and analysis for CUDA kernels
 - [NSight Systems](https://developer.nvidia.com/nsight-systems/get-started) performance tuning; profiles hardware metrics and CUDA apps, APIs, and libraries 
 - support for GCC 13 as a host-side compilers
 NVIDIA overview [here](https://developer.nvidia.com/blog/cuda-toolkit-12-4-enhances-support-for-nvidia-grace-hopper-and-confidential-computing/).
 
-```
-To run a CUDA application, your system needs:
-- A CUDA enabled GPU
-- An NVIDIA display driver that's compatible with the CUDA Toolkit used to build the application
-- The right version of any libraries the application relies on for dynamic linking
-```
-### Tested on:  OS, Software and Hardware
+### Test system
 
 #### Operating System: openSUSE Leap 15.5
 #### Software
