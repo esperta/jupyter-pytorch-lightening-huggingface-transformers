@@ -1,11 +1,12 @@
-## Setup for training Hugging Face Transformers
+## Setup for training Hugging Face Transformers on a Linux box with an NVIDIA GPU.
 
-### Current stack
-```Full stack
+### Current setup
+```
 jupyter
 Python 3.12
 PyTorch 2.4
 CUDA 12.4 and CUDA Toolkit 12.4
+[GPU NVIDIA Tesla V100 SXM2 16GB](https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf)  
 Linux x86-64 openSUSE Leap 15
 ```
 
@@ -15,21 +16,30 @@ Linux x86-64 openSUSE Leap 15
 |   2.5	   | >=3.9, <=3.12, (3.13 experimental) |	CUDA 11.8, CUDA 12.1, CUDA 12.4, CUDNN 9.1.0.70 |
 |   2.4	   |         >=3.8, <=3.12	            |     CUDA 11.8, CUDA 12.1, CUDNN 9.1.0.70        |
 
-## CUDA 12.4
-To run a CUDA application, your system needs:
-- A CUDA enabled GPU.
-- An NVIDIA display driver that's compatible with the CUDA Toolkit used to build the application.
-- The right version of any libraries the application relies on for dynamic linking.
+## GPU drivers and their installation
+GPUs have evolving architectures and capabilities.  To help characterize the computing power of each GPU model, it has a compute capability(cc).  
+For AI training, the GPU needs to have compute capability at least 3.0. So, 
+even if your GPU is CUDA-enabled, you need to double-check if the architecture supports AI training.
 
-See [NVIDIA CUDA technical doc](https://docs.nvidia.com/cuda/doc/index.html).
+To fully understand GPU installations, see [NVIDIA guide to datacenter drivers](https://docs.nvidia.com/datacenter/tesla/pdf/NVIDIA_Datacenter_Drivers.pdf). 
+Despite this is a datacenter guide, it has a wealth of information, much of which applies to installations on a single node.  
+Then the [install guide for NVIDIA drivers](https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/index.html#) provides step-by-step instructions 
+and faqs for driver installation on Linux.  
 
-### GPUs for CUDAs
-Every GPU 
-Each version of CUDA toolkit has a minimum compute capability that it supports. If you are using older GPU, 
-you may be unable to run the latest version of CUDA. After obtaining the compute capability of your 
-chosen NVIDIA GPU, you check against CUDA compatibility in this article.
+Tor those using Tesla, the NVIDIA white-paper on Tesla is found [here](https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf).
+
+
+### CUDA and CUDA Toolkits
+CUDA Toolkit 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. 
+
+For other GPUs, the compute capability of the NVIDIA GPUs determine the CUDA Toolkit to use.  Each version of CUDA toolkit has a minimum GPU compute capability that it supports. 
+To determine the CUDA Toolkit version:
+1. Find the compute capability of your GPU using this [list from NVIDIA](https://developer.nvidia.com/cuda-gpus)
+2. Use the compute capacity to find the Toolkit version here.
+
+
 #### GPUs for CUDA Toolkit 12.4
-CUDA 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. 
+
 
 #### CUDA Toolkit 12.4
 The CUDA Toolkit contains
@@ -39,6 +49,9 @@ The CUDA Toolkit contains
 - [NSight Systems](https://developer.nvidia.com/nsight-systems/get-started) performance tuning; profiles hardware metrics and CUDA apps, APIs, and libraries 
 - support for GCC 13 as a host-side compilers
 NVIDIA overview [here](https://developer.nvidia.com/blog/cuda-toolkit-12-4-enhances-support-for-nvidia-grace-hopper-and-confidential-computing/).
+
+#### CUDA 12.4
+See [NVIDIA CUDA technical doc](https://docs.nvidia.com/cuda/doc/index.html).
 
 ### Test system
 
