@@ -13,6 +13,8 @@ A comment on NVIDIA model names - Tesla is the name for data center accelerators
 For instance, my setup uses data center accelerator (a Tesla accelerator) from the Volta architecture (v) with model number 100 and using a SXM2 socket.
 
 ## Install Volta GPU drivers
+
+How do I find the right GPU driver for my GPU?  
 The NVIDIA white-paper on Volta is found [here](https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf).
 
 GPUs have evolving architectures and capabilities.  To help characterize the computing power of each GPU model, each has a compute capability(cc). For AI training, the GPU needs to have compute capability at least 3.0. So, even if your GPU is CUDA-enabled, you need to double-check if the architecture supports AI training.
@@ -21,7 +23,11 @@ To fully understand GPU installations, see [NVIDIA guide to datacenter drivers](
 
 Actual installation on Linux is covered in the [guide for NVIDIA drivers](https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/index.html#). This guide also provides step-by-step instructions and faqs for driver installation on Linux.  
 
-### Install CUDA 12.6 and CUDA 12.6 Toolkits
+### Install CUDA Toolkits according to GPU architecture
+How do I find the right toolkit for my GPU architecture?
+![CUDA-architecture-matrix](https://github.com/user-attachments/assets/7fc993db-5628-4bc0-9631-704d302b7fe8)
+
+
 CUDA Toolkit 12.6 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. 
 
 For other GPUs, the compute capability of the NVIDIA GPUs determine the CUDA Toolkit to use.  Each version of CUDA toolkit has a minimum GPU compute capability that it supports. 
