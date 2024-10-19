@@ -16,7 +16,7 @@ For instance, my setup uses data center accelerator (a Tesla accelerator) from t
 ## GPU drivers and their installation
 GPUs have evolving architectures and capabilities.  To help characterize the computing power of each GPU model, it has a compute capability(cc). For AI training, the GPU needs to have compute capability at least 3.0. So, even if your GPU is CUDA-enabled, you need to double-check if the architecture supports AI training.
 
-To fully understand GPU installations, see [NVIDIA guide to datacenter drivers](https://docs.nvidia.com/datacenter/tesla/pdf/NVIDIA_Datacenter_Drivers.pdf). Though it is datacenter guide, it has a wealth of information, much of which applies to installations on a single node.  Actual installation on Linux is covered [herel guide for NVIDIA drivers](https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/index.html#) provides step-by-step instructions and faqs for driver installation on Linux.  
+To fully understand GPU installations, see [NVIDIA guide to datacenter drivers](https://docs.nvidia.com/datacenter/tesla/pdf/NVIDIA_Datacenter_Drivers.pdf). Though it is datacenter guide, it has a wealth of information, much of which applies to installations on a single node.  Actual installation on Linux is covered int the [guide for NVIDIA drivers](https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/index.html#) This guide also provides step-by-step instructions and faqs for driver installation on Linux.  
 
 Tor those using Tesla, the NVIDIA white-paper on Tesla is found [here](https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf).
 
