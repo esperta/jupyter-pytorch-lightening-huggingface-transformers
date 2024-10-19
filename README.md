@@ -25,10 +25,10 @@ Actual installation on Linux is covered in the [guide for NVIDIA drivers](https:
 CUDA Toolkit 12.6 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. 
 
 For other GPUs, the compute capability of the NVIDIA GPUs determine the CUDA Toolkit to use.  Each version of CUDA toolkit has a minimum GPU compute capability that it supports. 
-To determine the CUDA Toolkit version:
+To determine the CUDA Toolkit version: https://www.nvidia.com/en-us/drivers/
 1. Find the compute capability of your GPU using this [list from NVIDIA](https://developer.nvidia.com/cuda-gpus)
 2. Use the compute capacity to find the Toolkit version here.
-To find the driver for your https://www.nvidia.com/en-us/drivers/
+To find the driver for your CUDA use the manual tool [here](https://www.nvidia.com/en-us/drivers/)
 
 #### GPUs for CUDA Toolkit 12.4
 
