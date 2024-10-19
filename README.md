@@ -12,23 +12,23 @@ Linux x86-64 openSUSE Leap 15
 A comment on NVIDIA model names - Tesla is the name for data center accelerators and the letter before the model number is the architecture.
 For instance, my setup uses data center accelerator (a Tesla accelerator) from the Volta architecture (v) with model number 100 and using a SXM2 socket.
 
+## Install Volta GPU drivers
+The NVIDIA white-paper on Volta is found [here](https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf).
 
-## GPU drivers and their installation
-GPUs have evolving architectures and capabilities.  To help characterize the computing power of each GPU model, it has a compute capability(cc). For AI training, the GPU needs to have compute capability at least 3.0. So, even if your GPU is CUDA-enabled, you need to double-check if the architecture supports AI training.
+GPUs have evolving architectures and capabilities.  To help characterize the computing power of each GPU model, each has a compute capability(cc). For AI training, the GPU needs to have compute capability at least 3.0. So, even if your GPU is CUDA-enabled, you need to double-check if the architecture supports AI training.
 
-To fully understand GPU installations, see [NVIDIA guide to datacenter drivers](https://docs.nvidia.com/datacenter/tesla/pdf/NVIDIA_Datacenter_Drivers.pdf). Though it is datacenter guide, it has a wealth of information, much of which applies to installations on a single node.  Actual installation on Linux is covered int the [guide for NVIDIA drivers](https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/index.html#) This guide also provides step-by-step instructions and faqs for driver installation on Linux.  
+To fully understand GPU installations, see [NVIDIA guide to datacenter drivers](https://docs.nvidia.com/datacenter/tesla/pdf/NVIDIA_Datacenter_Drivers.pdf). Though it is datacenter guide, it has a wealth of information, much of which applies to installations on a single node.  
 
-Tor those using Tesla, the NVIDIA white-paper on Tesla is found [here](https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf).
+Actual installation on Linux is covered in the [guide for NVIDIA drivers](https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/index.html#). This guide also provides step-by-step instructions and faqs for driver installation on Linux.  
 
-
-### CUDA and CUDA Toolkits
-CUDA Toolkit 12.4 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. 
+### Install CUDA 12.6 and CUDA 12.6 Toolkits
+CUDA Toolkit 12.6 works with NVIDIA GPUs from the G8x series onwards, including GeForce, Quadro, and the Tesla line. 
 
 For other GPUs, the compute capability of the NVIDIA GPUs determine the CUDA Toolkit to use.  Each version of CUDA toolkit has a minimum GPU compute capability that it supports. 
 To determine the CUDA Toolkit version:
 1. Find the compute capability of your GPU using this [list from NVIDIA](https://developer.nvidia.com/cuda-gpus)
 2. Use the compute capacity to find the Toolkit version here.
-
+To find the driver for your https://www.nvidia.com/en-us/drivers/
 
 #### GPUs for CUDA Toolkit 12.4
 
